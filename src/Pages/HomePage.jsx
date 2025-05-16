@@ -3,6 +3,7 @@ import About from "../components/About";
 import Values from "../components/Values";
 import Facts from "../components/Facts";
 import Features from "../components/Features";
+import ProductSlider from "../components/ProductSlider";
 
 export default function HomePage() {
   return (
@@ -52,6 +53,7 @@ export default function HomePage() {
       <Values />
       <Facts />
       <Features />
+      <ProductSlider />
     </>
   );
 }
