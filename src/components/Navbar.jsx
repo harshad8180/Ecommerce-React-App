@@ -4,9 +4,56 @@ import { Link, NavLink } from "react-router-dom";
 export default function Navbar() {
   return (
     <>
+      <div className="top-bar bg-primary p-2">
+        <div className="row">
+          <div className="col-md-9 col-6">
+            <div className="ms-5">
+              <Link className="me-4" to="mailto:harshad.sunbeam98@gmail.com">
+                <i className="text-light fa fa-envelope">
+                  <span className="d-none d-md-inline">
+                    harshad.sunbeam98@gmail.com
+                  </span>
+                </i>
+              </Link>
+
+              <Link className="me-4" to="tel:+91 9112801380">
+                <i className="text-light fa fa-phone">
+                  <span className="d-none d-md-inline">+91 9112801380</span>
+                </i>
+              </Link>
+
+              <Link className="me-4" to="https://wa.me/+919112801380">
+                <i className=" text-light fa fa-whatsapp">
+                  <span className="d-none d-md-inline">+91 9112801380</span>
+                </i>
+              </Link>
+            </div>
+          </div>
+
+          <div className="col-md-3 col-6">
+            <div className="float-end me-5">
+              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
+                <i className="text-light fa fa-facebook "></i>
+              </Link>
+              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
+                <i className="text-light fa fa-instagram "></i>
+              </Link>
+              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
+                <i className="text-light fa fa-linkedin "></i>
+              </Link>
+              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
+                <i className="text-light fa fa-twitter "></i>
+              </Link>
+              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
+                <i className="text-light fa fa-youtube "></i>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
       <header
         id="header"
-        className="header d-flex align-items-center fixed-top"
+        className="header d-flex align-items-center sticky-top"
       >
         <div className="container-fluid container-xl position-relative d-flex align-items-center">
           <Link to="/" className="logo d-flex align-items-center me-auto">

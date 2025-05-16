@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 export default function Breadcrum({ title }) {
   return (
     <>
-      <br />
-      <br />
-      <section id="hero" className="my-5 bg-primary">
+      <section id="hero" className="bg-primary">
         <div className="container">
           <ol className="breadcrumb">
             <li className="breadcrumb-item">

@@ -3,12 +3,12 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer id="footer" className="footer">
+      <footer id="footer" className="footer text-light">
         <div className="footer-newsletter">
           <div className="container">
             <div className="row justify-content-center text-center">
               <div className="col-lg-6">
-                <h4>Join Our Newsletter</h4>
+                <h4 className="text-light">Join Our Newsletter</h4>
                 <p>
                   Subscribe to our newsletter and receive the latest news about
                   our products and services!
@@ -37,7 +37,9 @@ export default function Footer() {
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
-                <span className="sitename">FlexStart</span>
+                <span className="sitename text-light">
+                  {import.meta.env.VITE_SITE_NAME}
+                </span>
               </a>
               <div className="footer-contact pt-3">
                 <p>A108 Adam Street</p>
@@ -52,65 +54,82 @@ export default function Footer() {
             </div>
 
             <div className="col-lg-2 col-md-3 footer-links">
-              <h4>Useful Links</h4>
+              <h4 className="text-light">Useful Links</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right"></i> <a href="#">Home</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">About us</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    About us
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Services</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Terms of service</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Terms of service
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <div className="col-lg-2 col-md-3 footer-links">
-              <h4>Our Services</h4>
+            <div className="text-light col-lg-2 col-md-3 footer-links">
+              <h4 className="text-light">Our Services</h4>
               <ul>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Web Design</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Web Design
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Web Development</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Web Development
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Product Management</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Product Management
+                  </a>
                 </li>
                 <li>
-                  <i className="bi bi-chevron-right"></i>{" "}
-                  <a href="#">Marketing</a>
+                  <i className="text-light bi bi-chevron-right"></i>
+                  <a className="text-light" href="#">
+                    Marketing
+                  </a>
                 </li>
               </ul>
             </div>
 
-            <div className="col-lg-4 col-md-12">
-              <h4>Follow Us</h4>
+            <div className="text-light col-lg-4 col-md-12">
+              <h4 className="text-light">Follow Us</h4>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra videa magna
                 derita valies
               </p>
               <div className="social-links d-flex">
-                <a href="">
+                <a className="text-light" href="">
                   <i className="bi bi-twitter-x"></i>
                 </a>
-                <a href="">
+                <a className="text-light" href="">
                   <i className="bi bi-facebook"></i>
                 </a>
-                <a href="">
+                <a className="text-light" href="">
                   <i className="bi bi-instagram"></i>
                 </a>
-                <a href="">
+                <a className="text-light" href="">
                   <i className="bi bi-linkedin"></i>
                 </a>
               </div>
@@ -120,15 +139,13 @@ export default function Footer() {
 
         <div className="container copyright text-center mt-4">
           <p>
-            © <span>Copyright</span>{" "}
-            <strong className="px-1 sitename">FlexStart</strong>{" "}
+            © <span>Copyright</span>
+            <strong className="px-1 sitename">
+              {" "}
+              {import.meta.env.VITE_SITE_NAME}
+            </strong>
             <span>All Rights Reserved</span>
           </p>
-          <div className="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>{" "}
-            Distributed by <a href="https://themewagon.com/" />
-            ThemeWagon
-          </div>
         </div>
       </footer>
     </>
