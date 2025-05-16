@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="container-fluid container-xl position-relative d-flex align-items-center">
           <Link to="/" className="logo d-flex align-items-center me-auto">
             {/* <img src="assets/img/logo.png" alt="" /> */}
-            <h1 className="sitename">FlexStart</h1>
+            <h1 className="sitename">{import.meta.env.VITE_SITE_NAME}</h1>
           </Link>
 
           <nav id="navmenu" className="navmenu">
