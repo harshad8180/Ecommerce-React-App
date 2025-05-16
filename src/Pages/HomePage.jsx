@@ -61,7 +61,6 @@ export default function HomePage() {
       <Products />
       <Testimonial />
       <CategorySlider />
-      <ContactUsPage />
     </>
   );
 }

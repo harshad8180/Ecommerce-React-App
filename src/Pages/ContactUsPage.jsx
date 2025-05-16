@@ -1,8 +1,10 @@
 import React from "react";
+import Breadcrum from "../components/Breadcrum";
 
 export default function ContactUsPage() {
   return (
     <>
+      <Breadcrum title="Contact Us" />
       <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
           <h2>Contact</h2>

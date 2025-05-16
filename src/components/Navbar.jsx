@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -8,37 +9,35 @@ export default function Navbar() {
         className="header d-flex align-items-center fixed-top"
       >
         <div className="container-fluid container-xl position-relative d-flex align-items-center">
-          <a
-            href="index.html"
-            className="logo d-flex align-items-center me-auto"
-          >
-            <img src="assets/img/logo.png" alt="" />
+          <Link to="/" className="logo d-flex align-items-center me-auto">
+            {/* <img src="assets/img/logo.png" alt="" /> */}
             <h1 className="sitename">FlexStart</h1>
-          </a>
+          </Link>
 
           <nav id="navmenu" className="navmenu">
             <ul>
               <li>
-                <a href="#hero" className="active">
+                <NavLink to="/">
                   Home
                   <br />
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="#about">About</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <NavLink to="/shop">Shop</NavLink>
               </li>
               <li>
-                <a href="#portfolio">Portfolio</a>
+                <NavLink to="/features">Features</NavLink>
               </li>
               <li>
-                <a href="#team">Team</a>
+                <NavLink to="/testimonials">Testimonials</NavLink>
               </li>
               <li>
-                <a href="blog.html">Blog</a>
+                <NavLink to="/contactus">Contact Us</NavLink>
               </li>
+              {/*               
               <li className="dropdown">
                 <a href="#">
                   <span>Dropdown</span>{" "}
@@ -82,6 +81,8 @@ export default function Navbar() {
                   </li>
                 </ul>
               </li>
+               */}
+              {/* 
               <li className="listing-dropdown">
                 <a href="#">
                   <span>Listing Dropdown</span>{" "}
@@ -115,9 +116,11 @@ export default function Navbar() {
                   </li>
                 </ul>
               </li>
-              <li>
+               */}
+
+              {/* <li>
                 <a href="#contact">Contact</a>
-              </li>
+              </li> */}
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
