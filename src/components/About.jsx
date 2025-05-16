@@ -39,7 +39,7 @@ export default function About() {
             data-aos="zoom-out"
             data-aos-delay="200"
           >
-            <img src="assets/img/about.jpg" className="img-fluid" alt="" />
+            <img src="../assets/img/about.jpg" className="img-fluid" alt="" />
           </div>
         </div>
       </div>

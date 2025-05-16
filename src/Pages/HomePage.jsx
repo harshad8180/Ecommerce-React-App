@@ -4,6 +4,10 @@ import Values from "../components/Values";
 import Facts from "../components/Facts";
 import Features from "../components/Features";
 import ProductSlider from "../components/ProductSlider";
+import Products from "../components/Products";
+import Testimonial from "../components/Testimonial";
+import CategorySlider from "../components/CategorySlider";
+import ContactUsPage from "./ContactUsPage";
 
 export default function HomePage() {
   return (
@@ -54,6 +58,10 @@ export default function HomePage() {
       <Facts />
       <Features />
       <ProductSlider />
+      <Products />
+      <Testimonial />
+      <CategorySlider />
+      <ContactUsPage />
     </>
   );
 }

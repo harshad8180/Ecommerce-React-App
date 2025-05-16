@@ -15,7 +15,11 @@ export default function Features() {
         <div className="container">
           <div className="row gy-5">
             <div className="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-              <img src="assets/img/features.png" className="img-fluid" alt="" />
+              <img
+                src="../assets/img/features.png"
+                className="img-fluid"
+                alt=""
+              />
             </div>
 
             <div className="col-xl-6 d-flex">
@@ -174,7 +178,7 @@ export default function Features() {
               data-aos-delay="100"
             >
               <img
-                src="assets/img/alt-features.png"
+                src="../assets/img/alt-features.png"
                 className="img-fluid"
                 alt=""
               />
