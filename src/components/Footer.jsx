@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -37,18 +38,45 @@ export default function Footer() {
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6 footer-about">
               <a href="index.html" className="d-flex align-items-center">
-                <span className="sitename text-light">
+                <span className="sitename text-light fd-2">
                   {import.meta.env.VITE_SITE_NAME}
                 </span>
               </a>
               <div className="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p className="mt-3">
-                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                <p className="fs-5">{import.meta.env.VITE_SITE_ADDRESS}</p>
+
+                <p>
+                  <strong>Email:</strong>
+                  <Link
+                    className="text-light fs-5"
+                    target="_blank"
+                    rel="noreferrer"
+                    to={`mailto:${import.meta.env.VITE_SITE_EMAIL}`}
+                  >
+                    {import.meta.env.VITE_SITE_EMAIL}
+                  </Link>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@example.com</span>
+                  <strong>Phone:</strong>
+                  <Link
+                    className="text-light fs-5"
+                    target="_blank"
+                    rel="noreferrer"
+                    to={`tel:${import.meta.env.VITE_SITE_PHONE}`}
+                  >
+                    {import.meta.env.VITE_SITE_PHONE}
+                  </Link>
+                </p>
+                <p>
+                  <strong>Whatsapp:</strong>
+                  <Link
+                    className="text-light fs-5"
+                    target="_blank"
+                    rel="noreferrer"
+                    to={`https://wa.me/${import.meta.env.VITE_SITE_WHATSAPP}`}
+                  >
+                    {import.meta.env.VITE_SITE_WHATSAPP}
+                  </Link>
                 </p>
               </div>
             </div>
@@ -58,27 +86,27 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
+                  <Link className="text-light" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
+                  <Link className="text-light" to="/about">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Services
-                  </a>
+                  <Link className="text-light" to="/shop">
+                    Shop
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Terms of service
-                  </a>
+                  <Link className="text-light" to="/contactus">
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -88,27 +116,27 @@ export default function Footer() {
               <ul>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Web Design
-                  </a>
+                  <Link className="text-light" to="/features">
+                    Features
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Web Development
-                  </a>
+                  <Link className="text-light" to="/testimonials">
+                    Testimonials
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Product Management
-                  </a>
+                  <Link className="text-light" to="/#">
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li>
                   <i className="text-light bi bi-chevron-right"></i>
-                  <a className="text-light" href="#">
-                    Marketing
-                  </a>
+                  <Link className="text-light" to="/#">
+                    Terms & Conditions
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -120,18 +148,46 @@ export default function Footer() {
                 derita valies
               </p>
               <div className="social-links d-flex">
-                <a className="text-light" href="">
-                  <i className="bi bi-twitter-x"></i>
-                </a>
-                <a className="text-light" href="">
-                  <i className="bi bi-facebook"></i>
-                </a>
-                <a className="text-light" href="">
-                  <i className="bi bi-instagram"></i>
-                </a>
-                <a className="text-light" href="">
-                  <i className="bi bi-linkedin"></i>
-                </a>
+                <Link
+                  className="me-3"
+                  to={`${import.meta.env.VITE_SITE_FACEBOOK}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="text-light bi bi-facebook "></i>
+                </Link>
+                <Link
+                  className="me-3"
+                  to={`${import.meta.env.VITE_SITE_INSTAGRAM}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="text-light bi bi-instagram "></i>
+                </Link>
+                <Link
+                  className="me-3"
+                  to={`${import.meta.env.VITE_SITE_LINKEDIN}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="text-light bi bi-linkedin "></i>
+                </Link>
+                <Link
+                  className="me-3"
+                  to={`${import.meta.env.VITE_SITE_TWITTER}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="text-light bi bi-twitter-x "></i>
+                </Link>
+                <Link
+                  className="me-3"
+                  to={`${import.meta.env.VITE_SITE_YOUTUBE}`}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="text-light bi bi-youtube "></i>
+                </Link>
               </div>
             </div>
           </div>
@@ -141,7 +197,6 @@ export default function Footer() {
           <p>
             © <span>Copyright</span>
             <strong className="px-1 sitename">
-              {" "}
               {import.meta.env.VITE_SITE_NAME}
             </strong>
             <span>All Rights Reserved</span>

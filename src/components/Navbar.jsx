@@ -8,23 +8,42 @@ export default function Navbar() {
         <div className="row">
           <div className="col-md-9 col-6">
             <div className="ms-5">
-              <Link className="me-4" to="mailto:harshad.sunbeam98@gmail.com">
+              <Link
+                className="me-4"
+                target="_blank"
+                rel="noreferrer"
+                to={`mailto:${import.meta.env.VITE_SITE_EMAIL}`}
+              >
                 <i className="text-light fa fa-envelope">
                   <span className="d-none d-md-inline">
-                    harshad.sunbeam98@gmail.com
+                    {import.meta.env.VITE_SITE_EMAIL}
                   </span>
                 </i>
               </Link>
 
-              <Link className="me-4" to="tel:+91 9112801380">
+              <Link
+                className="me-4"
+                target="_blank"
+                rel="noreferrer"
+                to={`tel:${import.meta.env.VITE_SITE_PHONE}`}
+              >
                 <i className="text-light fa fa-phone">
-                  <span className="d-none d-md-inline">+91 9112801380</span>
+                  <span className="d-none d-md-inline">
+                    {import.meta.env.VITE_SITE_PHONE}
+                  </span>
                 </i>
               </Link>
 
-              <Link className="me-4" to="https://wa.me/+919112801380">
+              <Link
+                className="me-4"
+                target="_blank"
+                rel="noreferrer"
+                to={`https://wa.me/${import.meta.env.VITE_SITE_WHATSAPP}`}
+              >
                 <i className=" text-light fa fa-whatsapp">
-                  <span className="d-none d-md-inline">+91 9112801380</span>
+                  <span className="d-none d-md-inline">
+                    {import.meta.env.VITE_SITE_WHATSAPP}
+                  </span>
                 </i>
               </Link>
             </div>
@@ -32,20 +51,45 @@ export default function Navbar() {
 
           <div className="col-md-3 col-6">
             <div className="float-end me-5">
-              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
-                <i className="text-light fa fa-facebook "></i>
+              <Link
+                className="me-3"
+                to={`${import.meta.env.VITE_SITE_FACEBOOK}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="text-light bi bi-facebook "></i>
               </Link>
-              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
-                <i className="text-light fa fa-instagram "></i>
+              <Link
+                className="me-3"
+                to={`${import.meta.env.VITE_SITE_INSTAGRAM}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="text-light bi bi-instagram "></i>
               </Link>
-              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
-                <i className="text-light fa fa-linkedin "></i>
+              <Link
+                className="me-3"
+                to={`${import.meta.env.VITE_SITE_LINKEDIN}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="text-light bi bi-linkedin "></i>
               </Link>
-              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
-                <i className="text-light fa fa-twitter "></i>
+              <Link
+                className="me-3"
+                to={`${import.meta.env.VITE_SITE_TWITTER}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="text-light bi bi-twitter-x "></i>
               </Link>
-              <Link className="me-3" to="#" target="_blank" rel="noreferrer">
-                <i className="text-light fa fa-youtube "></i>
+              <Link
+                className="me-3"
+                to={`${import.meta.env.VITE_SITE_YOUTUBE}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="text-light bi bi-youtube "></i>
               </Link>
             </div>
           </div>
